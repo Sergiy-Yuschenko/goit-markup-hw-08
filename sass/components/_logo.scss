@@ -1,0 +1,17 @@
+/* ============== LOGO component ============== */
+
+.logo {
+    color: var(--logo-color);
+    font-family: var(--secondary-font);
+    @include font(700, 26px, 1.192, 0.03em);
+}
+
+.logo-first {
+    color: var(--accent-color);
+}
+
+.logo-second.dark {
+    color: var(--main-color-dark-backgr);
+}
+
+/* ============== LOGO END component ============== */

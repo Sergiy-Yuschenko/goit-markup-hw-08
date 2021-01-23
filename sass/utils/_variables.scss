@@ -1,0 +1,18 @@
+:root {
+    --accent-color: #2196F3; /*( частина логотипу,hover по посиланнях тобто акцент)*/
+    --logo-color: #000000; /*частина логотипу (світлий фон)*/
+    --heading-color: #212121; /*(h2, h3, посилання, текст на кнопках портфоліо) */
+    --main-color: #757575; /*(посилання на e-mail, абзаци)*/
+    --main-color-dark-backgr: #ffffff; /*(h1, кнопка "заказать услугу", рядок адреси, частина логотипу на темному фоні)*/
+    --backgr-color-first: #2F303A; /*(footer, hero)*/
+    --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
+    --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
+    --hero-gradient-color: rgba(47, 48, 58, 0.4); /*колір градієнту секції Hero*/
+    --social-link-background-dark: rgba(255, 255, 255, 0.1); /*колір фону посилань на соціальні мережі на темному фоні*/
+    --social-link-color: #afb1b8; /*колір іконок-посилань на соціальні мережі*/
+    --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
+    --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
+    --card-set-specialization: 30px; /*Відстань між карточками блоку "Чим ми займаємося"*/
+    --card-set-our-command: 30px; /*Відстань між карточками блоку "Наша команда"*/
+    --card-set-portfolio: 30px; /*Відстань між карточками блоку */
+}

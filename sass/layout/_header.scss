@@ -1,0 +1,113 @@
+    /* ============== HEADER ============== */
+.header {
+    &  > .container {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    .logo {
+        margin-right: 93px;
+    }
+
+    .address-list-link {
+        display: flex;
+        align-items: center;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.address-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-list-icon {
+    display: block;
+    fill: var(--main-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header .address-list-link:hover &,
+    .header .address-list-link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+.mail-icon{
+    width: 16px;
+    height: 12px;
+}
+
+.phone-icon{
+    width: 10px;
+    height: 16px;
+}
+
+.address-list-text {
+    display: block;
+    padding-left: 10px;
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header .address-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header .address {
+    margin-left: auto;     
+}
+
+.navigation-list-link,
+.address-list-link {
+    @include font(500, 14px, 1.143, 0.02em);
+  
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }      
+}
+
+.navigation-list-link{
+    color: var(--heading-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.active {
+        color: var(--accent-color);
+
+        &::after {
+            content: ""; 
+            width: auto;
+            height: 4px;
+            display: block;
+            background: var(--accent-color);
+            border-radius: 2px;
+        
+            position:relative;
+            top: 30px;
+        }
+    }
+}
+
+/* ============== END HEADER ============== */

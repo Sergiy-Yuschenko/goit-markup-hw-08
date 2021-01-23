@@ -1,0 +1,91 @@
+/* ============== FOOTER ============== */
+
+.footer {
+    background-color: var(--backgr-color-first);
+
+    &> .container {
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .logo {
+        display: block;
+       margin-bottom: 20px;
+    }
+
+    .addres-list-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+
+.address-footer-link {
+    @include font(400, 14px, 1.714, 0.03em);
+    color: var(--addres-second-color);
+}
+
+.location {
+    color: var(--main-color-dark-backgr);
+}
+
+.social-list-our-projekt {
+    margin-top: 12px;
+    margin-left: 70px;  
+}
+
+.social-list-invitation  {
+    @include font(700, 14px, 1.142, 0.03em);
+    text-transform: uppercase;
+    color: var(--main-color-dark-backgr);
+    margin-bottom: 20px;
+}
+
+.dark-social {
+    background: var(--social-link-background-dark);
+
+    .social-list-icon {
+        fill: var(--main-color-dark-backgr)
+    }
+}
+
+.subscription-form {
+    width: 570px;
+    margin-top: 12px;
+    margin-left: auto;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.subscription-form-title {
+    width:100%;
+
+    @include font(700, 14px, 1.143, 0.03em);
+    text-transform: uppercase;
+    color: var(--main-color-dark-backgr);
+    margin-bottom: 20px;
+}
+
+.subscription-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 16px;
+    &::placeholder {
+        @include font(400, 16px, 1.25, 0.03em);
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+/*.subscription-form-field {
+    display: inline-block;
+}*/
+
+.subscription-form-button {
+    margin-left: 12px;
+}
+
+/* ============== FOOTER END ============== */

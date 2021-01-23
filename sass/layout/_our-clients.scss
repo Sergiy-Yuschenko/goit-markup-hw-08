@@ -1,0 +1,68 @@
+/* ============== OUR CLIENTS ============== */
+
+.our-clients-section > .container {
+    flex-direction: column;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.our-clients-title {
+    margin-bottom: 50px;
+}
+
+.our-clients-list {
+    display: flex;
+}
+
+.our-client-link {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--social-link-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.our-clients-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.our-clients-icon {
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .our-client-link:hover &,
+    .our-client-link:focus & {
+        fill: var(--accent-color);
+    }
+}
+//Цикл для підбору розмірів логотипів клієнтів
+@each $client-number, $width-icon, $height-icon in
+    (first, 44.27px, 49.23px),
+    (second, 40px, 52px),
+    (third, 41px, 42.6px),
+    (fourth, 79.66px, 42.02px),
+    (fifth, 59px, 47px),
+    (sixth, 88.48px, 45.44px) {
+        .#{$client-number}-client-icon {
+            width: #{$width-icon};
+            height: #{$height-icon};
+        }
+}
+
+/* ============== OUR CLIENTS END ============== */
