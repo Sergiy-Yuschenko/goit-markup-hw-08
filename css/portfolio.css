@@ -92,15 +92,15 @@ img {
   font-style: normal;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
-  background: transparent;
+/*.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background: transparent;
 }
-
+*/
 /* ============== BUTTON component ============== */
 .button {
   display: inline-flex;

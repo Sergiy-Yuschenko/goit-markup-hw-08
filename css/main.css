@@ -92,15 +92,15 @@ img {
   font-style: normal;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
-  background: transparent;
+/*.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background: transparent;
 }
-
+*/
 /* ============== BUTTON component ============== */
 .button {
   display: inline-flex;
@@ -497,27 +497,25 @@ img {
 
 /* ============== END HEADER ============== */
 /* ============== HERO SECTION ============== */
-.hero-section > .container {
-  flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  width: 1600px;
-  background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+/*.hero-section > .container {
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width:1600px;
+    background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--main-color-dark-backgr);
-  margin-bottom: 30px;
-}
+    @include font(900, 44px, 1.364, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-color-dark-backgr);
+    margin-bottom: 30px;
 
+}
+*/
 /*.hero-button {
 
 }*/
