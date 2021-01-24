@@ -41,6 +41,7 @@
   /*вторинний шрифт для логотипу*/
   --card-set-specialization: 30px;
   /*Відстань між карточками блоку "Чим ми займаємося"*/
+  --card-set-advantages: 30px;
   --card-set-our-command: 30px;
   /*Відстань між карточками блоку "Наша команда"*/
   --card-set-portfolio: 30px;
@@ -116,8 +117,8 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto 60px;
-    padding: 0 15px;
+    margin: 0 auto;
+    padding: 94 15px;
     background: transparent;
   }
 }

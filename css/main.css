@@ -41,6 +41,7 @@
   /*вторинний шрифт для логотипу*/
   --card-set-specialization: 30px;
   /*Відстань між карточками блоку "Чим ми займаємося"*/
+  --card-set-advantages: 30px;
   --card-set-our-command: 30px;
   /*Відстань між карточками блоку "Наша команда"*/
   --card-set-portfolio: 30px;
@@ -116,8 +117,8 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto 60px;
-    padding: 0 15px;
+    margin: 0 auto;
+    padding: 94 15px;
     background: transparent;
   }
 }
@@ -602,30 +603,15 @@ img {
 */
 /* ============== HERO SECTION END ============== */
 /* ============== ADVANTAGES SECTION ============== */
-.advantages > .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantages-list {
-  display: flex;
-}
-
 .advantages-list-item {
-  padding: 3px;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
 
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .advantages-icon-background {
-  width: auto;
   height: 120px;
-  background: var(--backgr-color-second);
   margin-bottom: 30px;
+  background: var(--backgr-color-second);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -641,14 +627,47 @@ img {
   line-height: 1.142;
   text-transform: uppercase;
   color: var(--heading-color);
-  /*@include font($font-weight, $font-size, $line-height, $letter-spacing, $color)*/
   margin-bottom: 10px;
 }
 
 .advantages-description {
   font-weight: 400;
   line-height: 1.714;
-  /*@include font($font-weight, $font-size, $line-height, $letter-spacing, $color)*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .advantages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: calc(-1*var(---card-set-advantages));
+    margin-top: calc(-1*var(--card-set-advantages));
+  }
+  .advantages-list-item {
+    flex-basis: calc(100%/2 - var(--card-set-advantages));
+    width: 100%;
+    margin-left: var(--card-set-advantages);
+    margin-top: var(--card-set-advantages);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: flex;
+  }
+  .advantages-list-item {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  .advantages-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* ============== ADVANTAGES SECTION END ============== */
