@@ -32,7 +32,7 @@
 
 // СТИЛІ ДЛЯ ПЛАНШЕТУ
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .hero-section {
         background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/hero/bg-tablet.jpg);
         background-repeat: no-repeat;

@@ -549,7 +549,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/hero/bg-tablet.jpg);
     background-repeat: no-repeat;
@@ -635,7 +635,7 @@ img {
   line-height: 1.714;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-list {
     display: flex;
     justify-content: center;
@@ -672,6 +672,21 @@ img {
 
 /* ============== ADVANTAGES SECTION END ============== */
 /* ============== SPECIALIZATION SECTION ============== */
+@media screen and (max-width: 1199px) {
+  .specialization-section {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .specialization-section > .container {
   flex-direction: column;
   padding-bottom: 94px;
