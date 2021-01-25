@@ -3,7 +3,7 @@
 .logo {
     color: var(--logo-color);
     font-family: var(--secondary-font);
-    @include font(700, 26px, 1.192, 0.03em);
+    @include font(700, 24px, 1.167, 0.03em);
 }
 
 .logo-first {
@@ -13,5 +13,11 @@
 .logo-second.dark {
     color: var(--main-color-dark-backgr);
 }
+
+
+@media screen and (min-width: 768px){
+    @include font(700, 26px, 1.192, 0.03em);
+}
+
 
 /* ============== LOGO END component ============== */

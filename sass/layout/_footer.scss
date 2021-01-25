@@ -1,91 +1,187 @@
 /* ============== FOOTER ============== */
+ // СТИЛІ ДЛЯ МОБІЛЬНОГО
 
-.footer {
-    background-color: var(--backgr-color-first);
+ .footer {
+     background-color: var(--backgr-color-first);
 
-    &> .container {
-        align-items: flex-start;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+//     &> .container {
+//  //        display: flex;
+//          align-items: flex-start;
+//          flex-wrap: wrap;
 
-    .logo {
-        display: block;
-       margin-bottom: 20px;
-    }
+//         padding-top: 60px;
+// //         padding-bottom: 60px;
+//      }
 
-    .addres-list-item:not(:last-child) {
-        margin-bottom: 9px;
-    }
+
+     .logo {
+         display: block;
+        margin-bottom: 20px;
 }
 
-
-.address-footer-link {
-    @include font(400, 14px, 1.714, 0.03em);
-    color: var(--addres-second-color);
+     .addres-list-item:not(:last-child) {
+         margin-bottom: 8px;
+     }
 }
+
+.footer-info {
+    text-align:center;
+    margin-bottom: 60px; 
+}
+ .address-footer-link {
+     @include font(400, 14px, 1.714, 0.03em);
+     color: var(--addres-second-color);
+ }
 
 .location {
     color: var(--main-color-dark-backgr);
 }
 
-.social-list-our-projekt {
-    margin-top: 12px;
-    margin-left: 70px;  
+ .social-list-our-projekt {
+     margin-bottom: 60px;
+     margin-top: 12px;
+//     margin-left: 70px;  
+ }
+
+ .social-list-invitation  {
+     @include font(700, 14px, 1.142, 0.03em);
+     text-transform: uppercase;
+     text-align:center;
+     color: var(--main-color-dark-backgr);
+     margin-bottom: 20px;
+ }
+
+ .dark-social {
+     background: var(--social-link-background-dark);
+
+     .social-list-icon {
+         fill: var(--main-color-dark-backgr)
+     }
+ }
+
+ .subscription-form {
+  //   margin-top: 12px;
+     margin: 0 auto;
+     display:flex;
+     flex-wrap: wrap;
+ }
+
+ .subscription-form-title {
+     width:100%;
+
+     @include font(700, 14px, 1.143, 0.03em);
+     text-transform: uppercase;
+     text-align:center;
+     color: var(--main-color-dark-backgr);
+     margin-bottom: 20px;
+ }
+ .subscription-form-field {
+    width: 100%;
+   // display: inline-block;
+   margin-bottom: 20px;
+ }
+
+ .subscription-form-input {
+     width: 100%;
+     height: 50px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 4px;
+     background: transparent;
+     padding-left: 16px;
+     &::placeholder {
+         @include font(400, 16px, 1.25, 0.03em);
+         color: rgba(255, 255, 255, 0.6);
+     }
 }
 
-.social-list-invitation  {
-    @include font(700, 14px, 1.142, 0.03em);
-    text-transform: uppercase;
-    color: var(--main-color-dark-backgr);
-    margin-bottom: 20px;
-}
+ .subscription-form-button {
+     margin: 0 auto;
+ }
 
-.dark-social {
-    background: var(--social-link-background-dark);
-
-    .social-list-icon {
-        fill: var(--main-color-dark-backgr)
+ // СТИЛІ ДЛЯ ПЛАНШЕТУ
+ @media screen and (min-width: 768px){
+    .footer  .container {
+            align-items: center;
+            flex-wrap: wrap;
     }
-}
 
-.subscription-form {
-    width: 570px;
-    margin-top: 12px;
-    margin-left: auto;
-    display:flex;
-    flex-wrap: wrap;
-
-}
-
-.subscription-form-title {
-    width:100%;
-
-    @include font(700, 14px, 1.143, 0.03em);
-    text-transform: uppercase;
-    color: var(--main-color-dark-backgr);
-    margin-bottom: 20px;
-}
-
-.subscription-form-input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background: transparent;
-    padding-left: 16px;
-    &::placeholder {
-        @include font(400, 16px, 1.25, 0.03em);
-        color: rgba(255, 255, 255, 0.6);
+    .footer-info {
+        width: 232px;
+        margin-left: 76px;
+        margin-right: 165px;
     }
+
+    .subscription-form {
+        //  margin-top: 12px;
+        width: 450px;
+        margin:0 auto;
+          //  display:flex;
+          //  flex-wrap: wrap;
+       }
 }
+ 
+// СТИЛІ ДЛЯ МОНІТОРУ КОМПʼЮТЕРА
 
-/*.subscription-form-field {
-    display: inline-block;
-}*/
+@media screen and (min-width: 1200px){   
+     .footer  .container {
+            align-items: flex-start;
+            flex-wrap: nowrap;
+    }
 
-.subscription-form-button {
-    margin-left: 12px;
+    .footer-info {
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 70px;
+        text-align:justify;
+    }
+
+    .social-list-our-projekt {
+        margin-bottom: 0;
+      //  margin-right: 93px;
+        margin-top: 12px;
+    }
+
+    .social-list-invitation  {
+        text-align: justify;
+    }
+
+
+       .subscription-form {
+           margin-top: 12px;
+           width: 570px;
+           margin-right: 0;
+           margin-left: auto;
+           display:flex;
+           flex-wrap: wrap;
+       }
+
+       .subscription-form-title { 
+        text-align:justify;
+    }
+
+    .subscription-form-field {
+        width: auto;
+        margin-right: 12px;
+       // display: inline-block;
+      // margin-bottom: 20px;
+     }
+
+     .subscription-form-input {
+         width: 358px;
+    //     height: 50px;
+    //     border: 1px solid rgba(255, 255, 255, 0.3);
+    //     border-radius: 4px;
+    //     background: transparent;
+    //     padding-left: 16px;
+    //     &::placeholder {
+    //         @include font(400, 16px, 1.25, 0.03em);
+    //         color: rgba(255, 255, 255, 0.6);
+        //  }
+   }
+
+   .subscription-form-button {
+    margin: 0;
+    }   
+
 }
-
 /* ============== FOOTER END ============== */
