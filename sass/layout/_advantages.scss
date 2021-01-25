@@ -4,6 +4,7 @@
 .advantages-list-item {
      font-size: 14px;
      letter-spacing: 0.03em;
+     margin-bottom: 30px;
  }
  .advantages-icon-background {
  //    width:auto;
@@ -50,6 +51,7 @@
         width:100%;
         margin-left: var(--card-set-advantages);
         margin-top: var(--card-set-advantages);
+        margin-bottom: 0;
     }
 }
 
