@@ -46,6 +46,7 @@
   /*Відстань між карточками блоку "Наша команда"*/
   --card-set-portfolio: 30px;
   /*Відстань між карточками блоку */
+  --card-set-our-clients: 30px;
 }
 
 body {
@@ -110,7 +111,6 @@ img {
   .container {
     display: flex;
     max-width: 768px;
-    padding: 60px 15px;
   }
 }
 

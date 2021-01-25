@@ -20,6 +20,7 @@
 .specialization-section > .container {
     flex-direction: column;
     padding-bottom: 94px;
+    padding: 0 15px 94px;
 }
 .specialization-list {
     display: flex;
@@ -38,12 +39,18 @@
 .our-command-title,
 .our-clients-title {
     text-align: center;
-    @include font(700, 36px, 1.167, 0.03em);
+    @include font(700, 28px, 1.179, 0.03em);
     color: var(--heading-color);
+    margin-bottom: 30px;
 }
 
-.specialization-title {
-    margin-bottom: 50px;
+@media screen and (min-width: 1199px) {
+    .specialization-title,
+    .our-command-title,
+    .our-clients-title {
+        @include font(700, 36px, 1.167, 0.03em);
+        margin-bottom: 50px;
+    }
 }
 
 .specialization-name {
