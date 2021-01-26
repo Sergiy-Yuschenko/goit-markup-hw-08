@@ -51,7 +51,85 @@ line-height: 14px; (1.167)
 font-size: 14px;
 line-height: 24px; (2,89)
 
+Кнопки меню портфоліо 
 
+width: 128px;
+height: 38px;
+top: 120px;
+background: #F5F4FA;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+width: 128px;
+height: 38px
+top: 140px;
+background: #F5F4FA;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+width: 128px;
+height: 38px;
+background: #F5F4FA;
+border-radius: 4px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+Текст оверлею Портфоліо
+
+width: 402px;
+height: 140px;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF
+
+width: 306px;
+height: 196px;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+
+width: 322px;
+height: 168px;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+
+_________________
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+
+font-weight: bold;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: #212121;
 
 
 

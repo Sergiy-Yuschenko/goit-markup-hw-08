@@ -585,6 +585,10 @@ img {
   fill: var(--accent-color);
 }
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header .address {
   margin-left: auto;
 }
