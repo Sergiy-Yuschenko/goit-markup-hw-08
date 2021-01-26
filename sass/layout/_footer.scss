@@ -87,7 +87,7 @@
  // СТИЛІ ДЛЯ ПЛАНШЕТУ
  @media screen and (min-width: 768px){
     .footer  .container {
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
     }
 
@@ -120,7 +120,7 @@
 
     .social-list-our-projekt {
         margin-bottom: 0;
-         margin-top: 12px;
+        margin-top: 12px;
     }
 
     .social-list-invitation  {

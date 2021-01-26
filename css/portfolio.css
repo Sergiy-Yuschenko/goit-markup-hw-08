@@ -461,12 +461,6 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 479px) {
-  .portfolio-overlay {
-    overflow-y: scroll;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .portfolio-nav {
     display: flex;
@@ -477,6 +471,9 @@ img {
   }
   .portfolio-button {
     margin-top: 15px;
+  }
+  .portfolio-list-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -506,7 +503,6 @@ img {
   flex-basis: 100%;
 }
 
-/************************/
 .portfolio-animation-thumb {
   width: auto;
   height: 294px;
@@ -551,7 +547,7 @@ img {
 
 .portfolio-card-content {
   padding: 20px 24px;
-  border: 1px solid var(--main-color-dark-backgr);
+  border: 1px solid  #ECECEC;
   box-sizing: border-box;
 }
 
@@ -708,7 +704,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer .container {
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
   .footer-info {
