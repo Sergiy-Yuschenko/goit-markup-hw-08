@@ -9,6 +9,7 @@
     refs.closeModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
+      document.body.classList.toggle("modal-open"); //усуває скрол по сторінці коли відкрита модалка
       refs.modal.classList.toggle('is-hidden');
     }
   })();

@@ -1,4 +1,5 @@
 /* ============== BACKDROP component ============== */
+    // СТИЛІ ДЛЯ МОБІЛЬНОГО
 
 .backdrop {
     position: fixed;
@@ -7,22 +8,30 @@
     width: 100%;
     height:100%;
     background: rgba(0, 0, 0, 0.2);
+    /**/overflow-y: scroll;
 
 }
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    max-width: 450px;
+ //   min-height: 609px;
     background-color: var(--main-color-dark-backgr);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    position:absolute;
-    top: 50%;
-    left: 50%;
+    margin: 93px 15px;
     padding: 40px;
-    transform: translate(-50%, -50%);
+}
 
+@media screen and (min-width: 480px) {
+    .modal {
+    
+       position:absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    
+    }
 }
 
 .close-button-icon {
@@ -68,7 +77,8 @@
 }
 
 .form-invitation {
-    @include font(700, 20px, 1.15, 0.03em);
+    @include font(700, 20px, 1.5, 0.03em);
+    text-align: center;
     color: var(--heading-color);
 
     margin-bottom: 12px;
@@ -152,11 +162,11 @@
 }
 
 .modal-form-policy-text {
-    width: 423px;
+  //  width: 423px;
     margin-left: auto;
     margin-right:auto;
 
-    @include font(400, 14px, 1.714, 0.03em);
+    @include font(400, 12px, 1.167, 0.03em);
     white-space: pre;
 
     display: flex;
@@ -188,6 +198,41 @@
 .modal-form-button {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 479px) {
+    .modal {
+        position:relative
+    }
+    .modal-form-policy-text {
+        display: flax;
+     //   max-width: 450px;
+        white-space: normal;
+
+        &::before {
+            content: "";
+            width: 13px ;
+            height: 10px;
+            margin-right: 2px;
+        }
+    }
+}
+// СТИЛІ ДЛЯ ПЛАНШЕТУ
+
+// СТИЛІ ДЛЯ МОНІТОРУ КОМПʼЮТЕРА
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+       // min-height: 581px;
+    }
+    .form-invitation {
+        font-size: 23px;
+        line-height: 1.15;
+    }
+    .modal-form-policy-text {
+          @include font(400, 14px, 1.714, 0.03em);
+    }
 }
 
 /* ============== BACKDROP component END ============== */

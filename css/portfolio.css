@@ -54,6 +54,10 @@ body {
   font-family: var(--main-font);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -397,7 +401,7 @@ img {
   }
   .navigation-list-link {
     transition-property: color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .navigation-list-link.active::after {
