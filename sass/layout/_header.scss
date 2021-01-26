@@ -1,79 +1,90 @@
     /* ============== HEADER ============== */
-.header {
-    &  > .container {
-        display: flex;
-        padding-top: 24px;
-        padding-bottom: 25px;
+    // СТИЛІ ДЛЯ МОБІЛЬНОГО
+.header  > .container {
+    display: flex;
+    padding: 10px 15px;
+}
+.menu-button {
+    display: inline-flex;
+    // margin: 0;
+    margin-left:auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+        display:none;
     }
-
-    .logo {
-        margin-right: 93px;
-    }
-
-    .address-list-link {
-        display: flex;
-        align-items: center;
+}
     
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.menu-button .icon-close-menu {
+    display: none;
 }
-
-
-.site-nav {
-    display: flex;
-    align-items: center;
-}
-
-.navigation-list {
-    display: flex;
-}
-
-.address-list-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.address-list-icon {
+    
+.menu-button.is-open .icon-close-menu {
     display: block;
-    fill: var(--main-color);
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    .header .address-list-link:hover &,
-    .header .address-list-link:focus & {
-        fill: var(--accent-color);
-    }
 }
 
-.mail-icon{
-    width: 16px;
-    height: 12px;
+.menu-button.is-open .icon-menu {
+    display: none;
 }
 
-.phone-icon{
-    width: 10px;
-    height: 16px;
+
+.header {
+    position: relative; 
+}
+
+.page-header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .address-list-text {
-    display: block;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
-.navigation-list-item:not(:last-child) {
-    margin-right: 50px;
-}
-.header .address-list-item:not(:last-child) {
-    margin-right: 30px;
+.header .address-list-link {
+    display: flex;
+    align-items: center;
+
+  //  justify-content: center;
 }
 
-.header .address {
-    margin-left: auto;     
+@media screen and (max-width: 767px) {
+    .site-nav {
+        margin-bottom: 60px;
+    }
+    .navigation-list-item {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation-list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+
+    .header .address-list-link {
+        margin: 0 auto;
+    }
+    .header .address-list-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+
+    .menu-container {
+        background: #ffffff;
+        display:none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 60px 0;
+
+        &.is-open {
+            display: block;
+        }
+    }
 }
 
 .navigation-list-link,
@@ -89,10 +100,6 @@
 .navigation-list-link{
     color: var(--heading-color);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     &.active {
         color: var(--accent-color);
 
@@ -105,9 +112,139 @@
             border-radius: 2px;
         
             position:relative;
-            top: 30px;
+            top: 8px;
         }
     }
+}
+
+.address-list-icon {
+    display: block;
+    fill: var(--main-color);
+        .header .address-list-link:hover &,
+        .header .address-list-link:focus & {
+            fill: var(--accent-color);
+     }
+}
+
+.header {
+    .address {
+        margin-left: auto; 
+    }
+    .address-list-item {
+        display:flex;
+        width: 100%;
+        align-items: center;
+    }
+
+} 
+
+.mail-icon{
+    width: 16px;
+    height: 12px;
+}
+
+.phone-icon{
+    width: 10px;
+    height: 16px;
+}
+
+// СТИЛІ ДЛЯ ПЛАНШЕТУ
+
+
+@media screen and (min-width:  768px){
+    .header {
+        &  > .container {
+            display: flex;
+            padding: 21px 15px;
+
+        }
+    .address-list-link {
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+        .logo {
+            margin-right: 88px;
+        }
+ 
+    }
+
+    .menu-container {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    
+     .navigation-list {
+        display: flex;
+    }
+
+    .navigation-list-item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .navigation-list-link{
+        transition-property: color;
+        transition-duration: 2500ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &.active::after {
+                top: 31px;
+        }
+    }
+    .address-list-icon {
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header .address-list-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+// СТИЛІ ДЛЯ МОНІТОРУ КОМПʼЮТЕРА
+
+@media screen and (min-width: 1199px) {
+     .header {
+        &  > .container {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+
+    }
+
+    .navigation-list-link.active::after {
+        top: 28px;
+    }
+
+    .address-list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .mail-icon{
+        width: 14px;
+        height: 10px;
+    }
+    
+    .phone-icon{
+        width: 10px;
+        height: 14px;
+    }
+
+    .address-list-text {
+        margin-left: 8px;
+    }
+
+    .address-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
 }
 
 /* ============== END HEADER ============== */

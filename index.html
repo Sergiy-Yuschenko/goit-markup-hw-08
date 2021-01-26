@@ -10,38 +10,51 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
     <body>
-        <!-- <header class="header">
+        <header class="header">
             <div class="container">
-                <nav class="site-nav">
-                    <a class="logo link" href="./" aria-label="Логотип сайта Веб Студио"><span class="logo-first">Web</span><span class="logo-second">Studio</span></a>
-                    <ul class="navigation-list list">
-                        <li class="navigation-list-item"><a class="navigation-list-link active link" href="./index.html">Студия</a></li>
-                        <li class="navigation-list-item"><a class="navigation-list-link link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="navigation-list-item"><a class="navigation-list-link link" href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-                <address class="address">
-                    <ul  class="address-list-header list">
-                        <li class="address-list-item">
-                            <a class="address-list-link link" href="mailto:info@devstudio.com">
-                                <svg class="address-list-icon mail-icon">
-                                    <use href="./images/sprite.svg#icon-email" width="16" height="12"></use>
-                                </svg>
-                                <p class="address-list-text">info@devstudio.com </p> 
-                            </a>
-                        </li>
-                        <li class="address-list-item">
-                            <a class="address-list-link link" href="tel:+380961111111">
-                                <svg class="address-list-icon phone-icon">
-                                    <use href="./images/sprite.svg#icon-smartphone" width="10" height="16"></use>
-                                </svg>
-                                <p class="address-list-text"> +38 096 111 11 11</p>
-                            </a>
-                        </li>
-                    </ul>  
-                </address>
+                <a class="logo link" href="./" aria-label="Логотип сайта Веб Студио"><span class="logo-first">Web</span><span class="logo-second">Studio</span></a>
+                <button type="buton"
+                class="menu-button" 
+                aria-expanded="false" 
+                aria-controls="menu-container"
+                data-menu-button
+                >               
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                       <use class="icon-menu" href="./images/sprite.svg#icon-menu" ></use>
+                       <use class="icon-close-menu" href="./images/sprite.svg#icon-close-menu" ></use>
+                   </svg>           
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <nav class="site-nav">
+                        <ul class="navigation-list list">
+                            <li class="navigation-list-item"><a class="navigation-list-link active link" href="./index.html">Студия</a></li>
+                            <li class="navigation-list-item"><a class="navigation-list-link link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="navigation-list-item"><a class="navigation-list-link link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <address class="address">
+                        <ul  class="address-list-header list">
+                            <li class="address-list-item">
+                                <a class="address-list-link link" href="mailto:info@devstudio.com">
+                                    <svg class="address-list-icon mail-icon">
+                                        <use href="./images/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <p class="address-list-text">info@devstudio.com </p> 
+                                </a>
+                            </li>
+                            <li class="address-list-item">
+                                <a class="address-list-link link" href="tel:+380961111111">
+                                    <svg class="address-list-icon phone-icon">
+                                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                                    </svg>
+                                    <p class="address-list-text"> +38 096 111 11 11</p>
+                                </a>
+                            </li>
+                        </ul>  
+                    </address>
+                </div>
             </div>
-        </header> -->
+        </header>
         <main>
             <!--Hero-->
             <section class="hero-section">
@@ -429,6 +442,7 @@
             </div>
         </footer> -->
         <!--Підключення скріпта-->
-        <!-- <script src="./js/modal.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
+        <script src="./js/menu.js"></script>
     </body>
 </html>
