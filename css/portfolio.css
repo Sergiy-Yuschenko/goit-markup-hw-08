@@ -157,6 +157,13 @@ img {
   margin-left: 10px;
 }
 
+/* Правила для сепер малих екранів */
+@media screen and (max-width: 225px) {
+  .button {
+    width: auto;
+  }
+}
+
 /* ============== BACKDROP component END ============== */
 /* ============== LOGO component ============== */
 .logo {

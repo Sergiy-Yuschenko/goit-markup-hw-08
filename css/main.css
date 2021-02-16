@@ -157,6 +157,13 @@ img {
   margin-left: 10px;
 }
 
+/* Правила для сепер малих екранів */
+@media screen and (max-width: 225px) {
+  .button {
+    width: auto;
+  }
+}
+
 /* ============== BACKDROP component END ============== */
 /* ============== LOGO component ============== */
 .logo {
@@ -751,6 +758,18 @@ img {
   }
 }
 
+@media screen and (max-width: 335px) {
+  .hero-section .container {
+    padding: 50px 0;
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+}
+
 /*.hero-section > .container {
     flex-direction: column;
     padding-top: 200px;
@@ -1091,6 +1110,12 @@ img {
   .our-clients-list-item {
     width: 170px;
     flex-basis: calc(100%/6 - var(--card-set-our-clients));
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .our-clients-list-item {
+    flex-basis: calc(100%/1);
   }
 }
 

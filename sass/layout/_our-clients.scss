@@ -102,5 +102,11 @@
     }
 }
 
+ //Правила для сепер малих екранів
+ @media screen and  (max-width: 335px) {   
+    .our-clients-list-item {
+        flex-basis: calc(100%/1);
+    }
+}
 
 /* ============== OUR CLIENTS END ============== */

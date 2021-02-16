@@ -26,6 +26,13 @@
         margin-left: 10px;
     }
 }
+ /* Правила для сепер малих екранів */
+
+@media screen and  (max-width: 225px) {   
+    .button {
+        width: auto;      
+    }
+}
 // Мої експерименти 
 // @media screen and (max-width: 320px) {
 //     .button{

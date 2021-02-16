@@ -72,6 +72,15 @@
     background-position: center 0%;
   }
 }
+ //Правила для сепер малих екранів
+@media screen and  (max-width: 335px) {
+  .hero-section .container  {
+    padding: 50px 0;
+  }
+  .hero-title {
+    @include font(700, 20px, 1.615, 0.06em);
+  }  
+}
 
 
 // Мої експерименти 
