@@ -17,14 +17,18 @@
     .container {
         display: flex;
         max-width: 768px;
+        //background-color: violet;
     }
 }
 
 @media screen and (min-width: 1200px){
     .container {
-        max-width: 1200px;
+        max-width: 1170px;
         margin: 0 auto;
-        padding: 94 15px;
+        padding: 94px 0;
         background: transparent;
+        //background-color: violet;
+        
+
     }
 }

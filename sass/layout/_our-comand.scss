@@ -6,14 +6,14 @@
 .our-command-section {
     background-color: var(--backgr-color-second);
 
-    & > .container{
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+    // & > .container{
+    //     padding-top: 94px;
+    //     padding-bottom: 94px;
+    // }
 }
 
  .our-command-list-item {
-    width: auto;
+    flex-basis: 100%;
     background-color: var(--main-color-dark-backgr);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -58,9 +58,9 @@
         flex-direction: column;
     }
     .our-command-list {
-        width: 738px;
+        width: calc(100% + var(--card-set-our-clients));
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         flex-wrap: wrap;
         margin-left: calc(-1*var(--card-set-our-command));
         margin-top: calc(-1*var(--card-set-our-command));
@@ -75,14 +75,16 @@
 
 // СТИЛІ ДЛЯ МОНІТОРУ КОМПʼЮТЕРА
 
-@media screen and (min-width: 1199px) {
-    .our-command-list {
-        width: 1170px;
-    }
+@media screen and (min-width: 1200px) {
+    // .our-command-list {
+    //     width: calc(100% + var(--card-set-our-clients));
+    // }
 
     .our-command-list-item {
         flex-basis: calc(100%/4 - var(--card-set-our-command));
     }
+
+
 }
 
 

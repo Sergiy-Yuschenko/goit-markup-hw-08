@@ -10,12 +10,12 @@
 
 .specialization-section > .container {
     flex-direction: column;
-    padding-bottom: 94px;
-    padding: 0 15px 94px;
+    padding: 0 0 94px;
 }
 .specialization-list {
     display: flex;
     justify-content: center;
+    width: calc(100% + var(--card-set-our-clients));
 }
 
 .specialization-list-item {
@@ -50,7 +50,7 @@ text-align: center;
 text-transform: uppercase;
 color: var(--main-color-dark-backgr);
 
-width: 370px;
+width: 100%;
 background-color: rgba(47, 48, 58, 0.8);
 position: absolute;
 bottom: 0px;

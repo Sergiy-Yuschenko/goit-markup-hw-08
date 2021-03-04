@@ -120,9 +120,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 94 15px;
+    padding: 94px 0;
     background: transparent;
   }
 }
@@ -433,8 +433,7 @@ img {
 
 @media screen and (min-width: 1199px) {
   .header > .container {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 24px 0 25px 0;
   }
   .navigation-list-link.active::after {
     top: 28px;
@@ -512,7 +511,6 @@ img {
 
 .portfolio-animation-thumb {
   width: auto;
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
