@@ -5,8 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     //background-size: 480px 400px;
+    // padding: 118px 60px;
+    padding: 118px 0;
     .container {
-        padding: 118px 60px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,6 +61,11 @@
         background-repeat: no-repeat;
         background-size: 1600px 600px;
         background-position: center 0%;
+        padding: 200px 0;
+    }
+    .hero-title {
+      font-size: 44px;
+      line-height: 1.364;
     }
 }
 
@@ -72,9 +78,9 @@
     background-position: center 0%;
   }
 }
- //Правила для сепер малих екранів
+ //Правила для супер малих екранів
 @media screen and  (max-width: 335px) {
-  .hero-section .container  {
+  .hero-section {
     padding: 50px 0;
   }
   .hero-title {
@@ -83,38 +89,5 @@
 }
 
 
-// Мої експерименти 
-    // @media screen and (max-width: 320px) {
-    //     .hero-section .container {
-    //         padding: calc(118px/2) 15px;     
-    //     }
-    // }
-    // @media screen and (max-width: 250px) {
-    //     .hero-title {
-    //         @include font(900, 18px, 1.615, 0.06em);
-    //         text-align: center;
-    //         text-transform: uppercase;
-    //         color: var(--main-color-dark-backgr);
-    //         margin-bottom: 30px;
-    //     }
-    // }
-/*.hero-section > .container {
-    flex-direction: column;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    width:1600px;
-    background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero-title {
-    @include font(900, 44px, 1.364, 0.06em);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--main-color-dark-backgr);
-    margin-bottom: 30px;
-}
-*/
 
 /* ============== HERO SECTION END ============== */

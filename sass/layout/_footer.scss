@@ -2,15 +2,19 @@
  // СТИЛІ ДЛЯ МОБІЛЬНОГО
 
  .footer {
+     padding-top: 60px;
+     padding-bottom: 60px;
      background-color: var(--backgr-color-first);
      .logo {
          display: block;
         margin-bottom: 20px;
-}
+    }
 
      .addres-list-item:not(:last-child) {
          margin-bottom: 8px;
      }
+
+
 }
 
 .footer-info {
@@ -106,10 +110,12 @@
 // СТИЛІ ДЛЯ МОНІТОРУ КОМПʼЮТЕРА
 
 @media screen and (min-width: 1200px){   
-     .footer  .container {
+     .footer{
+        .container {
             align-items: flex-start;
             flex-wrap: nowrap;
     }
+}
 
     .footer-info {
         margin-left: 0;

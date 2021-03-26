@@ -1,9 +1,13 @@
     /* ============== HEADER ============== */
     // СТИЛІ ДЛЯ МОБІЛЬНОГО
-.header  > .container {
-    display: flex;
-    padding: 10px 15px;
+.header {
+    position: relative; 
+    padding: 16px 0;
+    & > .container {
+        display: flex;
+    }    
 }
+
 .menu-button {
     display: inline-flex;
     // margin: 0;
@@ -28,11 +32,6 @@
     display: none;
 }
 
-
-.header {
-    position: relative; 
-}
-
 .page-header .nav {
     display: flex;
     align-items: center;
@@ -48,45 +47,6 @@
     align-items: center;
 
   //  justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-    .site-nav {
-        margin-bottom: 60px;
-    }
-    .navigation-list-item {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navigation-list-item:not(:last-child) {
-        margin-bottom: 40px;
-    }
-    
-
-    .header .address-list-link {
-        margin: 0 auto;
-    }
-    .header .address-list-item:not(:last-child) {
-        margin-bottom: 16px;
-    }
-
-
-    .menu-container {
-        background: #ffffff;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-        display:none;
-        position: absolute;
-        z-index: 1;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 60px 0;
-
-        &.is-open {
-            display: block;
-        }
-    }
 }
 
 .navigation-list-link,
@@ -114,7 +74,7 @@
             border-radius: 2px;
         
             position:relative;
-            top: 8px;
+            // left: 10px;
         }
     }
 }
@@ -151,15 +111,118 @@
     height: 16px;
 }
 
+.header-social-list {
+    display: none;
+}
+
+//стилі, що застосовуються лише для мобільного
+@media screen and (max-width: 767px) {
+    .site-nav {
+        margin-bottom: 302px;
+    }
+    .navigation-list-item {
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .navigation-list-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    
+    .navigation-list-link {
+        font-size: 40px;
+        line-height: 1.175;
+        &.active::after {
+            display: none;
+        }
+    }
+    
+    .address-list-header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+     .address-list-link {
+        font-size: 24px;
+        line-height: 1.172;
+        margin: 0 auto 0 0;
+
+    }
+     .address-list-item:last-child {
+        margin-bottom: 32px;
+        .address-list-link {
+            font-size: 34px;
+            line-height: 40px;
+            color: var(--accent-color);
+        }
+    }
+
+    .address-list-icon {
+        display: none;
+    }
+
+    .address-list-text {
+        margin-left: 0;
+    }
+
+    .header-social-list {
+        display: flex;
+    }
+
+    .header-social-list-item:not(:last-child) {
+        margin-right: 10px;
+        // display: flex;
+        // position: relative;
+        ::after {
+            content: "";
+            width: 1px;
+            height: 22px;
+            display: block;
+            background: rgba(33, 33, 33, 0.2);
+            margin-left: 10px;
+            // position: absolute;
+        }
+    }
+
+    .header-social-list-link {
+        display: flex;
+    }
+
+    .header-social-list-link{
+        @include font(500, 18px, 1.222, 0.02em);
+        color: var(--accent-color);
+    }
+
+    .menu-container {
+        background: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        display:none;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 48px 40px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+}
+
+
 // СТИЛІ ДЛЯ ПЛАНШЕТУ
 
 
-@media screen and (min-width:  768px){
+@media screen and (min-width:  768px) {
     .header {
+        padding-top: 21px;
+        padding-bottom: 21px;
         &  > .container {
             display: flex;
-            padding: 21px 15px;
-
         }
     .address-list-link {
         transition-property: color;
@@ -202,6 +265,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -213,9 +277,8 @@
 
 @media screen and (min-width: 1199px) {
      .header {
-        &  > .container {
-            padding: 24px 0 25px 0;
-        }
+        padding: 24px 0 25px 0;
+
 
     }
 

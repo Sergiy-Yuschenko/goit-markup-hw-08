@@ -8,9 +8,11 @@
     }
 }
 
-.specialization-section > .container {
-    flex-direction: column;
-    padding: 0 0 94px;
+.specialization-section {
+    padding-top: 0;
+    & > .container {
+        flex-direction: column;
+    }
 }
 .specialization-list {
     display: flex;

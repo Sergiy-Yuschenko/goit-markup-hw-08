@@ -22,8 +22,7 @@
 }
 
 .advantages-title {
-        font-weight: 700;
-        line-height: 1.142;
+    @include font(700,14px, 1.143, 0.03em);
         text-transform: uppercase;
         color: var(--heading-color);
            
@@ -54,7 +53,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .advantages-title {
         text-align: center;
     }

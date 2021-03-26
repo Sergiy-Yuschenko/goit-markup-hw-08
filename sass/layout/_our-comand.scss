@@ -20,12 +20,6 @@
     margin-top: var(--card-set-our-command);
 }
 
-@media screen and (min-width: 480px) {
-    .our-command-list-item {
-        width: 450;
-    }
-}
-
 @media screen and (max-width: 767px) {
     .our-command-list-item:first-child {
         margin-top: 0;
